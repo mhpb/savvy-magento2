@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <savvy>
+                <active>1</active>
+                <model>Savvy\Payment\Model\Payment\Savvy</model>
+                <order_status>pending</order_status>
+                <title>Savvy</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+                <testnet>0</testnet>
+                <exchange_locktime>15</exchange_locktime>
+                <minoverpaymentfiat>1</minoverpaymentfiat>
+                <maxunderpaymentfiat>0.1</maxunderpaymentfiat>
+                <lock_address_timeout>86400</lock_address_timeout>
+            </savvy>
+        </payment>
+    </default>
+</config>

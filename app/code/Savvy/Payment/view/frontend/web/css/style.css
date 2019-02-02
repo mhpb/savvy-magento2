@@ -1,0 +1,21 @@
+.savvy_button {
+    padding: 10px;
+    background-color: #4775de;
+}
+
+a.savvy_button, a.savvy_button:hover {
+    text-decoration: none;
+    color: #FFF;
+    font-family: sofia_pro, Helvetica, Arial, sans-serif;
+}
+
+.payment_icons {
+    position: relative;
+    top: 8px;
+    display: inline-block;
+}
+
+.payment_icons img {
+    display: inline-block;
+    padding: 0 5px;
+}

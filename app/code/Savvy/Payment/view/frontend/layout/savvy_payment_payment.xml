@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Savvy_Payment::css/savvy.css"/>
+        <css src="Savvy_Payment::css/style.css"/>
+        <link src="Savvy_Payment::js/savvy.js"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Savvy\Payment\Block\Form\Savvy" name="savvy_form" cacheable="false" />
+        </referenceContainer>
+    </body>
+</page>

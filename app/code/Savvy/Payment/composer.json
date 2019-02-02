@@ -1,0 +1,22 @@
+{
+    "name": "savvy/module-payment",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "gikach@gmail.com",
+            "name": "Savvy Payment"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Savvy\\Payment\\": ""
+        }
+    }
+}
