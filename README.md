@@ -33,8 +33,8 @@ In order to use the plugin you will also need a Savvy API Key. Getting a key is 
  6. Select Enabled -> Yes and add you Api Key (Secret)
  
  <h3>How to update</h3>
- 1. Download the latest version of the integration: https://github.com/savvytechcom/savvy-magento2/releases/download/v1.0.0/savvy-magento2.zip
- 2. Extract the package and connect to your server using SFTP Clients. Then upload the app folder to Magento 2 root folder.
+ 1. Download the latest version of the integration: https://github.com/savvytechcom/savvy-magento2/releases/download/v1.0.0/savvy-magento2.zip <br>
+ 2. Extract the package and connect to your server using SFTP Clients. Then upload the app folder to Magento 2 root folder.<br>
  3. To complete the update process you need to run following commands: <br>
      php bin/magento setup:upgrade <br>
      php bin/magento cache:clean
