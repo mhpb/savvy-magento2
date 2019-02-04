@@ -14,10 +14,19 @@
                        translate="label" type="text">
                     <label>Api Key (Secret)</label>
                 </field>
+                <field id="api_secret_public" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="15"
+                       translate="label" type="text">
+                    <label>Api Key (Public)</label>
+                </field>
                 <field id="api_testnet" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="16"
                        translate="label" type="text">
                     <label>Api Key (Testnet)</label>
                     <comment>Testnet API key. Make sure that you enabled Testnet</comment>
+                </field>
+                <field id="api_testnet_public" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="16"
+                       translate="label" type="text">
+                    <label>Api Key (Testnet Public)</label>
+                    <comment>Testnet Public API key.</comment>
                 </field>
                 <field id="title" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label"
                        type="text">
