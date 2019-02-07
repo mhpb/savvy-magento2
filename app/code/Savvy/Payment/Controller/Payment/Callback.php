@@ -10,7 +10,7 @@ use Savvy\Payment\Model\Paymenttxn;
 
 use Magento\Framework\App\Request\Http;
 
-class Callback extends Action
+class Callback extends Action implements \Magento\Framework\App\Action\HttpPostActionInterface
 {
     protected $order;
     protected $savvyPayment;

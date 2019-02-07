@@ -299,7 +299,8 @@ class Payment extends \Magento\Framework\Model\AbstractModel implements \Savvy\P
     public function getTokenAddressData($token, $order_id)
     {
         $callbackUrl = $this->url->getUrl('savvy/payment/callback', [
-            'order' => $order_id
+            'order' => $order_id,
+            'ajax' => 1
         ]);
 
         $lock_address_timeout = $this->helper->getLockAddressTimeout();
@@ -398,13 +399,13 @@ class Payment extends \Magento\Framework\Model\AbstractModel implements \Savvy\P
             $order = $this->_orderRepository->get($order_id);
 
             if (!$order->getId()) {
-                return '';
+                return 'No Order';
             }
 
             $payment = $this->load($order_id, 'order_id');
 
             if (!$payment->getId()) {
-                return '';
+                return 'No Savvy Payment Order';
             }
         }
 
@@ -416,11 +417,14 @@ class Payment extends \Magento\Framework\Model\AbstractModel implements \Savvy\P
             'pending'
         ))
         ) {
-            return '';
+            return 'Order status: ' . $order->getStatus();
         }
 
         if ($data) {
             $params = json_decode($data);
+
+            $this->helper->log('Savvy response:');
+            $this->helper->log($params);
 
             $invoice = $payment->getInvoice();
             $currency_code = strtolower($order->getOrderCurrencyCode());
@@ -578,7 +582,7 @@ class Payment extends \Magento\Framework\Model\AbstractModel implements \Savvy\P
 
         }
 
-        return '';
+        return 'No Savvy Response';
 
     }
 

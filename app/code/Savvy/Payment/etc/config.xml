@@ -4,7 +4,7 @@
     <default>
         <payment>
             <savvy>
-                <active>1</active>
+                <active>0</active>
                 <model>Savvy\Payment\Model\Payment\Savvy</model>
                 <order_status>pending</order_status>
                 <title>Savvy</title>
