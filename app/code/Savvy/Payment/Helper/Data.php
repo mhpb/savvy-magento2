@@ -5,8 +5,8 @@ namespace Savvy\Payment\Helper;
 
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
-    const API_DOMAIN = 'https://api.paybear.io';
-    const API_DOMAIN_TEST = 'https://api.test.paybear.io';
+    const API_DOMAIN = 'https://api.savvy.io';
+    const API_DOMAIN_TEST = 'https://api.test.savvy.io';
     const EMAIL_TEMPLATE_UNDERPAIMENT = 'savvy_underpayment_email';
     const EMAIL_TEMPLATE_OVERPAIMENT = 'savvy_overpayment_email';
 
